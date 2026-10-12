@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main(){
+char studentName[50];
+float test1, test2, assignment,total;
+
+printf("Enter Student Name:\n");
+fgets(studentName, sizeof(studentName), stdin);
+
+
+printf("Enter Test 1 Mark: \n");
+scanf("%f", &test1);
+
+printf("Enter Test 2 Mark:\n");
+scanf("%f", &test2);
+
+printf("Enter Assignment Mark:\n");
+scanf("%f", &assignment);
+
+total = (test1+test2+assignment) / 3;
+
+printf("Student Name: %s \n", studentName);
+printf("Final Mark: %.2f \n", total);
+
+
+if("total >= 75"){
+printf("Distinction\n");
+}
+
+else if(total >= 60){
+printf("Credit\n");
+}
+
+else if(total >= 50){
+printf("Pass\n");
+}
+
+else {
+printf("Fail\n");
+}
+
+
+
+
+
+return 0;
+}
