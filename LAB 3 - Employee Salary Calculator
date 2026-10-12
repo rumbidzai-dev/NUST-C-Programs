@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+double salary,housingAllowance,transportAllowance,netSalary,grossSalary;
+const double tax = 0.15;
+
+printf("Employee Net Salary Calculator:\n");
+printf("\n------------------------------------------------\n\n");
+
+printf("Enter Employee's Basic Salary:\n");
+scanf("%lf", &salary);
+
+printf("Enter Employee's Housing Allowance:\n");
+scanf("%lf", &housingAllowance);
+
+printf("Enter Employee's Transport Allowance:\n");
+scanf("%lf", &transportAllowance);
+
+printf("Enter Tax:\n");
+scanf("%lf", &tax);
+
+grossSalary = salary+housingAllowance+transportAllowance;
+netSalary=grossSalary-tax;
+
+printf("Gross Salary: %.2lf\n", grossSalary);
+printf("Net Salary: %.2lf\n", netSalary);
+
+return 0;
+}
