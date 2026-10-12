@@ -1,0 +1,37 @@
+include<stdio.h>
+int main(){
+double salary=0, totalSalary=0,averageSalary=0,highestSalary=0,lowestSalary=0;
+int employee=0;
+
+for(employee =1; employee<=5; employee++){
+	printf("Enter salary of Employee:\n", employee);
+	scanf("%lf", &salary);
+	
+	totalSalary += salary;
+	
+	if(employee == 1){
+		highestSalary = salary;
+		lowestSalary = salary;
+	}
+	else {
+	
+	if(salary >= highestSalary){
+		highestSalary = salary;
+	}
+	
+	if(salary <= lowestSalary){
+		lowestSalary = salary;
+	}
+	}
+}
+
+averageSalary = totalSalary/5;
+
+ printf("HighestSalary: %.2f\n", highestSalary);
+ printf("LowestSalary: %.2f\n", lowestSalary);
+ printf("Average Salary: %.2f\n", averageSalary);
+ printf("Total Salary: %.2f\n", totalSalary);
+
+
+return 0;
+}
