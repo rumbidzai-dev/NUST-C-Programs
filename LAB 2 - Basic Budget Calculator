@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+double revenue,expenses,balance;
+
+printf("Enter Total Revenue:\n");
+scanf("%lf", &revenue);
+
+printf("Enter Total Expenses:\n");
+scanf("%lf", &expenses);
+
+balance = revenue - expenses;
+
+if(revenue > expenses){
+printf("Surplus: %.2f\n", balance);
+}
+else if(revenue < expenses){
+printf("Deficit: %.2f/n", balance);
+}
+
+
+return 0;
+}
