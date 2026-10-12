@@ -21,6 +21,13 @@ scanf("%lf", &tax);
 grossSalary = salary+housingAllowance+transportAllowance;
 netSalary=grossSalary-tax;
 
+if(netSalary >= 20000){
+	printf("High Income.");
+}
+else{
+	printf("Standard Income.");
+}
+
 printf("Gross Salary: %.2lf\n", grossSalary);
 printf("Net Salary: %.2lf\n", netSalary);
 
